@@ -5,7 +5,7 @@ class StudentController
 {
    static getAllStudents =  async  (req,res)=>
    {
-    console.log("getAllStudents")
+    // console.log("getAllStudents")
     try{
       const result = await  studetModel.find();
       res.send(result);

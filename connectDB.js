@@ -4,8 +4,8 @@ const connectDb =  async (DatabaseUrl) =>
 {
   try{
  const dbOptions={
-  dbName:"Student"
- };
+  dbName:process.env.DB_NAME
+  };
  await mongoose.connect(DatabaseUrl, dbOptions);
  console.log("Connected succesfully")
   }
